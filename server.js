@@ -7,7 +7,7 @@ dotenv.config()
 const { MongoClient } = require('mongodb');
 const res = require('express/lib/response');
 const MONGODB_URL = process.env.MONGODB_URL;
-const connectionString= `mongodb+srv://Corm-Admin:poop321@cluster0.4ide5.mongodb.net/?retryWrites=true&w=majority`;
+const connectionString= `mongodb+srv://${process.env.USER}:${process.env.PW}@cluster0.4ide5.mongodb.net/?retryWrites=true&w=majority`;
 
 let raidLocation = '';
 
